@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Everything Grimes Eats in a Day</title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=New+Rocker&display=swap" rel="stylesheet">
+  <link rel="icon" 
+      type="image/png" 
+      href="assets/imgs/grimesicon.png">
+</head>
+
+<body>
+
+<a href=https://michellenapolitano.github.io/grimes-home><img class="grimes" src="assets/imgs/grimes.gif"></a>
+
+<div class="quiz-wrapper">
+<h1>Everything Grimes Eats in a Day</h1>
+<p><a href="https://www.youtube.com/watch?v=k1md8pw85Ms">Grimes' What I Eat in a Day Video</a></p>
+
+	<ul class="options">
+		
+		<li class="title">Menu</li>
+		<li class="option" data-target="broccoli"><img src="assets/imgs/broccoli.png" draggable="true" ondragstart="drag(event)" id="drag3" width="275" height="275"><p class="text">Broccoli</p></li>
+		<li class="option" data-target="hotdog">
+			<img src="assets/imgs/hotdog.png" draggable="true" ondragstart="drag(event)" id="drag2" width="220" height="220"> <p class="text">Hot Dog</p></li>
+		<li class="option" data-target="pasta">
+			<img src="assets/imgs/pasta.png" draggable="true" ondragstart="drag(event)" id="drag4" width="320" height="250"><p class="text">Pasta</p></li>
+					<li class="option" data-target="toast">
+			<img src="assets/imgs/index.png" draggable="true" ondragstart="drag(event)" id="drag1" width="300" height="275">		    <p class="text">"Butter Toast"</p></li>
+					<li class="option" data-target="caffeine">
+			<img src="assets/imgs/gocube.png" draggable="true" ondragstart="drag(event)" id="drag1" width="300" height="275">		    <p class="text">Caffeinated "Go Cubes"</p></li>
+					<li class="option" data-target="kombucha">
+			<img src="assets/imgs/kombucha.png" draggable="true" ondragstart="drag(event)" id="drag1" width="250" height="255">		    <p class="text">Kombucha"</p></li>
+	</ul>
+
+<div class="answers">
+	<ol>
+		<div class="meal1"><a href="https://youtu.be/k1md8pw85Ms?t=29"> BREAKFAST 🍴</a></div>
+		<span class="target" data-accept="toast">&nbsp;</span>
+		<div class="meal2"><a href="https://youtu.be/k1md8pw85Ms?t=317"> LUNCH 🍴 </a></div>
+		<span class="target" data-accept="hotdog">&nbsp;</span>
+		<div class="meal3"><a href="https://youtu.be/k1md8pw85Ms?t=171"> DINNER 🍴 </a></div>
+		<span class="target" data-accept="pasta">&nbsp;</span>
+		<div class="meal4"><a href="https://youtu.be/k1md8pw85Ms?t=80"> IF I HAVE TO 🤢</a></div>
+		<span class="target" data-accept="broccoli">&nbsp;</span>
+		<div class="meal5"><a href="https://youtu.be/k1md8pw85Ms?t=10"> SNACK 🍴 </a></div>
+		<span class="target" data-accept="caffeine">&nbsp;</span>
+		<div class="meal6"><a href="https://youtu.be/k1md8pw85Ms?t=406"> DRINK 🥃 </a></div>
+		<span class="target" data-accept="kombucha">&nbsp;</span>
+	</ol>
+</div>
+
+ <button type="submit" value="submit">Submit</button>
+ <div class="lightbox-bg"></div>
+ <div class="status confirm">
+   <p>Congratulations! <br> You have completed sorting Grimes' meals for the day. Below are the recipes for the menu items. <br>
+
+BROCCOLI - <br>
+Just don’t make this one if you don't have to.
+<br>
+BUTTER TOAST - <br>
+Melt an entire stick of butter onto a pan, place the bread onto the pan, and then turn the toast over so the toast is completely saturated in butter.
+<br>
+HOT DOG - <br>
+According to Grimes, hotdogs are great to eat because they use the extra parts of the animal. “They don’t kill cows for hotdogs… so you can eat them without guilt if you have vegan tendencies.” The best hotdog place is Vicious Dogs in LA, and she gets a guacamole covered hotdog called “The Green Hornet.”
+<br>
+PASTA - <br>
+Pasta, more specifically spaghetti, seems to be Grimes’ favorite food of all time. She mentions that on a tour she became malnourished by only having her diet consist of spaghetti. Her favorite spaghetti is Japanese style spaghetti that she describes as slightly saltier than the usual spaghetti.
+<br>
+CAFFEINATED “GO CUBES” - <br>
+Grimes’ snacks on caffeinated “Go Cubes.” In fact, she starts her day with them, and goes back to sleep to let the caffeine soak in. Genius!
+<br>
+KOMBUCHA - <br>
+Because Grimes was pregnant with child X Æ A-Xii at the time that the video was filmed, she could not enjoy a dark beer that she often enjoys otherwise. SHe mentions that she loves kombucha even though it does not do anything good for your health as many people claim.
+
+</p> 
+<button type="submit" onclick="window.open('./menu.pdf')">Download</button>
+ </div>
+ <div class="status deny">
+   <p>Fill all of the plates to complete Grimes' meals for the day.</p>
+ </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
